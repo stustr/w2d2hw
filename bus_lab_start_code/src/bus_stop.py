@@ -11,3 +11,6 @@ class BusStop:
         
     def clear(self):
         (self.queue).clear()
+        
+    def join_bus(self):
+        self.queue.pop(-1)
