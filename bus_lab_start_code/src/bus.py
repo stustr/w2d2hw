@@ -21,5 +21,7 @@ class Bus:
 
     def pick_up_from_stop(self, bus_stop):
         for p in bus_stop.queue:
+            print(p)
             self.pick_up(p)
             bus_stop.queue.remove(p)
+            
